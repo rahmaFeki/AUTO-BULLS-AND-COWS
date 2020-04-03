@@ -1,0 +1,31 @@
+.container{
+	 padding: 0.5em 1.5em;
+	 padding-top:1.5em
+}
+#social{
+	padding-top:3vw;
+	
+	
+}
+#ima{
+	padding-top:3vw;
+
+}
+body{
+  background-image: radial-gradient(closest-side ellipse at center, white, brown);
+	
+	
+}
+#SoundHome,#social{
+	background-color:rgba(0,0,0,0.4);
+}
+#bd2{
+	line-height: 1.3em;
+
+	
+	font-style:italic;
+	  color:#f6eec7;
+  font-family:Arial;
+}
+
+

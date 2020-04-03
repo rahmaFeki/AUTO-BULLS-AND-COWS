@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Goudy Stout;
+  src: url('GOUDYSTO.TTF') format('truetype');
+}
+
+#home,#sound{
+	background-color:rgba(0,0,0,0.4);
+}
+
+td,th{
+	border-radius:5px;
+	
+}
+table{
+	border-collapse: separate;
+
+}
+#attemp{
+	font-family:Goudy Stout;
+	color:white;
+}
+.container{
+	 padding: 0.5em 1.5em;
+	 padding-top:1.5em
+}
+body{
+  background-image: radial-gradient(closest-side ellipse at center, white, brown);
+	
+	
+}
+#randNumber{
+	background-color:rgba(220,200,60,0.1);
+	 padding-left: auto;
+    padding-right: auto;
+
+	font-size:3vw;
+	    line-height: 1.3em;
+		   letter-spacing: 5px;
+	text-align:center;
+	  color:#f6eec7;
+  font-family:Goudy Stout;
+  margin-top:15vw;
+ 
+}
+
+ 
+#numb{
+		font-size:2vw;
+		font-family:Goudy Stout;
+		width:100%;
+		background-color:red;
+		
+}
+@media screen and (max-width: 575px) {
+	#ga{height:40vw;
+	
+	}
+	#enter{
+		width:50vw;
+	}
+	#randNumber{
+	font-size:7vw;
+}
+	
+
+}
+@media screen and (max-width: 355px) {
+	
+	#a0,#a1,#a2,#a3,#a4,#aa0,#aa1,#aa2,#aa3,#aa4
+{
+font-size:6vw;
+}
+
+	
+
+
+}
+
+	#enter{
+		margin-top:2vw;
+	}
+#bulls{
+	
+		}
+#bulls{
+		font-family:Goudy Stout;
+		background-color:#ECDFC8;
+		color:#527318;
+}
+#a0,#a1,#a2,#a3,#a4,#aa0,#aa1,#aa2,#aa3,#aa4
+{font-family:Goudy Stout;
+font-size:3vw;
+width:100%;
+height:auto;
+}
+input[type=radio]{
+  transform:scale(1.5);
+ 
+}
+
+
+.modal-body{
+	font-family:Goudy Stout;
+font-size:4vw;
+color:#f6eec7;
+}
+#bd{
+	text-align:center;
+}
+

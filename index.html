@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<link href="css\bootstrap.css" rel="stylesheet">
+<link href="css\interface.css" rel="stylesheet">
+</head>
+<body >
+<div id=all>
+    <div class="container">
+	
+	
+<div class="modal fade" id="inf">
+  <div class="modal-dialog modal-lg modal-md modal-sm modal-xs" >
+    <div class="modal-content"style="background-color:rgba(0,0,0,0.4);">
+   
+		<div class="modal-body" id=bd2 >
+			You will imagine a XXXX Number in his head and the pc will try to discover it:
+			<ul>
+     
+				<li>The Number must not start by the digit 0</li>
+				<li>The Number is composed of 4 digits (from 0 to 9)</li>
+				<li>The Number must contain all different digits (no repetition, exp. 0353 is prohibited)</li>
+				<li>If the pc proposes a number that contains: 0 digit of the Number XXXX,you must say : 0 bulls 0 cows</li>
+				<li>1 digit that belongs to the number XXXX, and this number is not in the right position, you must say 1 cow and 0 bulls (Exp: XXXX= 1245,pc proposes 7856)</li>
+				<li>2 digits that belong to the number XXXX, and these 2 digits are not in the right position,you must say 2 cows and 0 bulls (Exp : XXXX= 1245, someone proposes 4589) etc.</li>
+				<li> A number that belongs to the number XXXX, and this number is in the right position,you must say 1 bull and 0 cows (Exp: XXXX= 1245, someone proposes 1763) etc.</li>
+				<li> The pc has only seven tries to find the number XXXX</li>
+			</ul>
+   
+		</div>
+		<div class="modal-footer" id=foot2>
+			<img class="img-responsive" id=ifoot2 src="pack\close.png" data-dismiss="modal" width=50vw  / >
+		</div>
+    </div>
+  </div>
+</div> 
+
+<div class="row" id=SoundHome>
+    <div class="col-lg-1 col-md-1 col-sm-1 "><img src="pack\sound_s.png" height="50vw"></div>
+
+</div>
+<div class="row">
+    <div class=" col-lg-2 col-md-2 col-sm-2  col-xs-2 "></div>
+    <div class=" col-lg-4 col-md-9 col-sm-9 col-xs-8 ">
+		<img class=img-responsive src="pack\ente.png" width=100%>
+	</div>
+</div>
+<div class="row">
+    <div class=" col-lg-2 col-md-3 col-sm-3  col-xs-3 "></div>
+    <div class="col-lg-4 col-md-5 col-sm-4 col-xs-4">
+		<map name="mp"id=mp>
+			<area shape="rect" coords="100,179,450,351" href="autoGuess.html" alt="play"  target="_blank"/ style="cursor:pointer;">
+			<area shape="rect" coords="95,415,455,577" href="#inf"  alt="auto" data-toggle="modal" />
+		</map>
+		<img class=img-responsive src="pack\main_s.png "  usemap="#mp" width="565" height="765" id="ima"  />
+	
+	</div>
+</div>
+	
+		
+<div class="row" id=social>
+	<div class="col-lg-1 col-md-1 col-sm-1  col-xs-2 "><img src="pack\fb_s.png" height="50vw"></div>
+	<div class="col-lg-1 col-md-1 col-sm-1 "></div>
+	<div class="col-lg-1 col-md-3 col-sm-1  col-xs-2		"><img src="pack\gmail_s.png" height="50vw" id=gmail></div>
+</div>
+</div>
+				
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/resiz.js"></script>
+<script>
+$(document).ready(function(){
+   $('body,html').animate({scrollTop: 200}, 800); 
+   });
+</script>
+</body>
+</html>

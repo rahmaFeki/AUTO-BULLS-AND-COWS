@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+<link href="css\bootstrap.css" rel="stylesheet">
+<link href="css\auto.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<button  data-backdrop="static" data-toggle="modal" href="#infos" class="btn btn-primary" hidden id=btn></button>
+	<div class="modal fade" id="infos">
+		<div class="modal-dialog modal-lg modal-md modal-sm modal-xs" >
+		<div class="modal-content"style="background-color:rgba(0,0,0,0.4);">
+			<div class="modal-body" id=bd>
+				please choose your number!
+			</div>
+			<div class="modal-footer" id=foot>
+				<img class="img-responsive" id=ifoot src="pack\ok.png" data-dismiss="modal" width=50vw onClick="GenerateInitialList();" / >
+			</div>
+		</div>
+		</div>
+	</div> 
+
+	<button  data-toggle="modal" href="#info" class="btn btn-primary" hidden id=btn1></button>
+	<div class="modal fade" id="info">
+		<div class="modal-dialog modal-lg modal-md modal-sm modal-xs" >
+		<div class="modal-content"style="background-color:rgba(0,0,0,0.4);">
+		<div class="modal-body" id=bd1>
+		</div>
+		<div class="modal-footer" id=foot1>
+			<img class="img-responsive" id=ifoot1 src="pack\close.png" data-dismiss="modal" width=50vw onClick="init();"/ >
+		</div>
+		</div>
+		</div>
+	</div> 
+	<div class="row " id=home>
+	<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" >
+	</div>
+	<div class="col-lg-1 col-md-1 col-sm-1 "> <a href="index.html"> <img src="pack\home.png" height="50vw" /></a></div>
+	</div>
+    <div class=row id=sound>
+	  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" >
+	  <img src="pack\sound_s.png" height="50vw"></div>
+	  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" >
+	  </div>
+	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 "><img src="pack\reload.png" height="50vw" onClick="init();"></div>
+	</div>
+	<div class="row" style="background-color:rgba(0,0,0,0.1);">
+		<div class="col-lg-5 col-md-4 col-sm-5 col-xs-3" id=attemp> <img class=img-responsive src="pack\attemps.png" width="100%"></div>
+	</div>
+	<div class="row" style="background-color:rgba(0,0,0,0.1)";>
+		<div class="col-lg-5 col-md-4 col-sm-5 col-xs-3  table-responsive-xs  table-responsive-lg table-responsive-md table-responsive-sm">
+		<table class="table   table-striped table-condensed   " id=tab>
+		<thead>
+			<tr style="background-color:#f6eec7;">
+			<th style=" line-height: 2em;">Number</th>
+			<th>B</th>
+			<th>C</th>
+			</tr>
+		</thead>
+		<tbody>
+        <tr style="background-color:#9dc6a7;">
+			<td id=nb0></td>
+			<td id=t0></td>
+			<td id=v0></td>
+		</tr>
+		<tr style="background-color:#d1f5d3;">
+			<td id=nb1></td>
+			<td id=t1></td>
+			<td id=v1></td>
+		</tr>
+		<tr style="background-color:#9dc6a7;">
+			<td id=nb2></td>
+			<td id=t2></td>
+			<td id=v2></td>
+		</tr>
+		<tr style="background-color:#d1f5d3;">
+			<td id=nb3></td>
+			<td id=t3></td>
+			<td id=v3> </td>
+		</tr>
+		<tr style="background-color:#9dc6a7;">
+			<td id=nb4></td>
+			<td id=t4></td>
+			<td id=v4></td>
+		</tr>
+		<tr style="background-color:#d1f5d3;">
+			<td id=nb5></td>
+			<td id=t5></td>
+			<td id=v5></td>
+		</tr>
+	    <tr style="background-color:#9dc6a7;">
+			<td id=nb6></td>
+			<td id=t6></td>
+			<td id=v6></td>
+		</tr>
+		</tbody>
+		</table>
+		</div> 
+	
+
+		<div class="col-lg-7 col-md-7 col-sm-7  col-xs-3" >
+		<div id=randNumber >
+			Number Display!
+		</div>
+		</div>
+	</div>
+	<div class=row style="background-color:rgba(0,0,0,0.1);">
+	<div class="col-lg-5  col-sm-5 col-xs-5" ></div>
+    <div class="col-lg-7  col-sm-7  col-xs-6" >
+		<div id=bulls >Bulls</div>
+	<div class="form-check form-check-inline">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0" checked>
+		<label class="form-check-label" for="inlineRadio1" ><span id=a0>0</span></label>
+	</div>
+	<div class="form-check form-check-inline">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1">
+		<label class="form-check-label" for="inlineRadio2"><span id=a1>1</span></label>
+	</div>
+	<div class="form-check form-check-inline">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+		<label class="form-check-label" for="inlineRadio2" ><span id=a2>2</span></label>
+	</div>
+	<div class="form-check form-check-inline">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="3">
+		<label class="form-check-label" for="inlineRadio2"><span id=a3>3</span></label>
+	</div>
+	<div class="form-check form-check-inline">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="4">
+		<label class="form-check-label" for="inlineRadio2" ><span id=a4>4</span></label>
+	</div>
+	</div>
+	</div>
+	<div class=row style="background-color:rgba(1,0,0,0.1); ">
+		<div class="col-lg-5  col-sm-5 col-xs-5" ></div>
+		<div class="col-lg-7  col-sm-7  col-xs-7" >
+			<div id=bulls >Cows</div>
+			<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadio00" value="0" checked>
+			<label class="form-check-label" for="inlineRadio1" ><span id=aa0>0</span></label>
+			</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadio2" value="1">
+			<label class="form-check-label" for="inlineRadio2"><span id=aa1>1</span></label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadio2" value="2">
+			<label class="form-check-label" for="inlineRadio2" ><span id=aa2>2</span></label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadio2" value="3">
+			<label class="form-check-label" for="inlineRadio2"><span id=aa3>3</span></label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadio2" value="4">
+			<label class="form-check-label" for="inlineRadio2" ><span id=aa4>4</span></label>
+		</div>
+		</div>
+	</div>
+	<div class=row>
+		<div class="col-lg-5  col-sm-5 col-xs-5" ></div>
+		<div class="col-lg-3 col-md-3  col-sm-3 col-xs-2" >
+		<img class=img-responsive src="pack\enter.png" width="100%" id=enter onclick="getVacheTau();"></div>
+	</div>
+	</div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/play.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+   $('body,html').animate({scrollTop: 500}, 800); 
+   });
+</script>
+</body>
+</html>

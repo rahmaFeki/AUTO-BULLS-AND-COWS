@@ -5,3 +5,4 @@ Open the index page with you browser and start playing 'Bulls&Cows' against your
 
 Yeah, it is smart enough to find you number ;)  don't make mistake in B or C :p 
 Please read the rules of the game before playing.
+"# bulls-and-cows" 
